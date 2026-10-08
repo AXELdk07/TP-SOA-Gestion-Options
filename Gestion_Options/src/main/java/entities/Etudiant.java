@@ -23,7 +23,6 @@ public class Etudiant {
         this.email = email;
     }
 
-    // Getters et Setters
     public String getIdentifiant() {
         return identifiant;
     }

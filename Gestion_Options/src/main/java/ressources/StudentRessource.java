@@ -13,7 +13,6 @@ public class StudentRessource {
 
     private EtudiantBusiness etudiantBusiness = new EtudiantBusiness();
 
-    // GET /rest/etudiants : Liste de tous les étudiants
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllEtudiants() {
@@ -21,7 +20,6 @@ public class StudentRessource {
         return Response.status(Response.Status.OK).entity(etudiants).build();
     }
 
-    // GET /rest/etudiants/{identifiant} : Rechercher un étudiant par son identifiant
     @GET
     @Path("/{identifiant}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -34,7 +32,6 @@ public class StudentRessource {
         }
     }
 
-    // POST /rest/etudiants : Ajouter un étudiant
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
@@ -52,7 +49,6 @@ public class StudentRessource {
         }
     }
 
-    // PUT /rest/etudiants/{identifiant} : Modifier un étudiant
     @PUT
     @Path("/{identifiant}")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -66,7 +62,6 @@ public class StudentRessource {
         }
     }
 
-    // DELETE /rest/etudiants/{identifiant} : Supprimer un étudiant
     @DELETE
     @Path("/{identifiant}")
     public Response deleteEtudiant(@PathParam("identifiant") String identifiant) {

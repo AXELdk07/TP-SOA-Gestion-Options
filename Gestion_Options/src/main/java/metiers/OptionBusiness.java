@@ -11,7 +11,6 @@ public class OptionBusiness {
     public OptionBusiness() {
         if (options == null) {
             options = new ArrayList<Option>();
-            // Initialisation avec quelques exemples
             options.add(new Option(1, "Informatique", "Informatique", "M. Responsable Informatique", 30, 1, 30));
             options.add(new Option(2, "Mathématiques", "Mathématiques", "Mme Responsable Mathématiques", 25, 1, 25));
             options.add(new Option(3, "Physique", "Physique", "M. Responsable Physique", 20, 2, 20));

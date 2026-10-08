@@ -24,7 +24,6 @@ public class Option {
         this.capacite = capacite;
     }
 
-    // Getters et Setters
     public int getCodeOption() {
         return codeOption;
     }
